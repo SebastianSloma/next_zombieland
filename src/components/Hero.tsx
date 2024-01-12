@@ -4,45 +4,42 @@ import React from 'react';
 const Hero = () => {
 	return (
 		<div>
-			<div className='h-screen'>
-                <div>
-                <Image
-					src='/tree3.png'
-					alt='sign'
-					width={400}
-					height={300}
-					className='relative z-[-1]'
-				/>
-                </div>
-				<Image
-					src='/tree2.png'
-					alt='sign'
-					width={400}
-					height={300}
-					className='relative z-[-1]'
-				/>
-				<Image
-					src='/zombie_sign.png'
-					alt='sign'
-					width={400}
-					height={300}
-					className='relative z-[-1]'
-				/>
-                <Image src='/tree1.png'
-					alt='tree1'
-					width={400}
-					height={300}
-					className='relative top-0 right-52 z-[1]'/>
-			</div>
-            <div>
-            <Image
-					src='/tree4.png'
-					alt='sign'
-					width={800}
-					height={400}
-					className='relative z-[-1]'
-				/>
-            </div>
+			<Image
+				src='/tree3.png'
+				alt='sign'
+				width={1000}
+				height={600}
+				className='absolute z-[-40] inset-x-0 top-0 '
+			/>
+			<Image
+				src='/tree2.png'
+				alt='sign'
+				width={400}
+				height={300}
+				className='absolute z-[-30] inset-y-0 left-0'
+			/>
+			<Image
+				src='/zombie_sign.png'
+				alt='sign'
+				width={400}
+				height={300}
+				className='absolute z-[-100] top-250 right-250 '
+			/>
+			<Image
+				src='/tree1.png'
+				alt='tree1'
+				width={600}
+				height={300}
+				className='absolute inset-y-0 right-0   z-[10]'
+			/>
+
+			<Image
+				src='/tree4.png'
+				alt='sign'
+				width={800}
+				height={400}
+				className='absolute z-[-22] inset-x-0 bottom-0'
+			/>
 		</div>
 	);
 };
