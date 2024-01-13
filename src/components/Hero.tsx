@@ -17,11 +17,11 @@ const Hero = () => {
 		[1, 0.5, 0.1, 0],
 		[-1000, 0, 0, 0]
 	);
-	const scale2 = useTransform(scrollYProgress, [1, 0.5], [0, 2]);
+	const scale2 = useTransform(scrollYProgress, [0, 0.5], [0, 2]);
 	const xTransform2 = useTransform(
 		scrollYProgress,
-		[1, 0.5, 0.1, 2],
-		[-1000, 0, 0, 0]
+		[1, 0.5, 0.1,0],
+		[1000, 0, 0, 0]
 	);
 	return (
 		<div className='h-lvh'>
