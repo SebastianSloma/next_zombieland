@@ -1,14 +1,15 @@
-import Hero from '@/components/Hero'
-import Road from '@/components/Road'
-import ZombieOne from '@/components/ZombieOne'
-
+import Hero from '@/components/Hero';
+import Horde from '@/components/Horde';
+import Road from '@/components/Road';
+import ZombieOne from '@/components/ZombieOne';
 
 export default function Home() {
-  return (
-   <>
-   <Hero/>
-   <ZombieOne/>
-   <Road/>
-   </>
-  )
+	return (
+		<>
+			<Hero />
+			<ZombieOne />
+			<Road />
+			<Horde />
+		</>
+	);
 }
