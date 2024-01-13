@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import Road from '@/components/Road'
 import ZombieOne from '@/components/ZombieOne'
 
 
@@ -7,6 +8,7 @@ export default function Home() {
    <>
    <Hero/>
    <ZombieOne/>
+   <Road/>
    </>
   )
 }
