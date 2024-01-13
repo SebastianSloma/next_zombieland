@@ -1,4 +1,5 @@
 import Attack from '@/components/Attack';
+import Hands from '@/components/Hands';
 import Hero from '@/components/Hero';
 import Horde from '@/components/Horde';
 import Road from '@/components/Road';
@@ -12,6 +13,7 @@ export default function Home() {
 			<Road />
 			<Horde />
       <Attack/>
+      <Hands/>
 		</>
 	);
 }
