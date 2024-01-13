@@ -1,3 +1,4 @@
+import Attack from '@/components/Attack';
 import Hero from '@/components/Hero';
 import Horde from '@/components/Horde';
 import Road from '@/components/Road';
@@ -10,6 +11,7 @@ export default function Home() {
 			<ZombieOne />
 			<Road />
 			<Horde />
+      <Attack/>
 		</>
 	);
 }
