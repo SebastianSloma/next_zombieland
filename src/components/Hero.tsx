@@ -23,7 +23,7 @@ const Hero = () => {
 				alt='sign'
 				width={400}
 				height={300}
-				className='fixed z-[-100] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+				className='absolute z-[-100] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
 			/>
 			<Image
 				src='/tree1.png'
