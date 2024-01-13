@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
@@ -18,6 +17,12 @@ const Hero = () => {
 		[1, 0.5, 0.1, 0],
 		[-1000, 0, 0, 0]
 	);
+	const scale2 = useTransform(scrollYProgress, [1, 0.5], [0, 2]);
+	const xTransform2 = useTransform(
+		scrollYProgress,
+		[1, 0.5, 0.1, 2],
+		[-1000, 0, 0, 0]
+	);
 	return (
 		<div className='h-lvh'>
 			<motion.img
@@ -31,8 +36,8 @@ const Hero = () => {
 					top: 0,
 					left: 0,
 					width: '100%',
-					scale: scale,
-					x: xTransform,
+					scale: scale2,
+					x: xTransform2,
 				}}
 			/>
 			<motion.img
