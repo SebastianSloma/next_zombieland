@@ -10,7 +10,7 @@ const ZombieOne = () => {
 		offset: ['start start', 'end start'],
 	});
 
-	const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+	const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1.1]);
 	const scaleTwo = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
 
 	return (
