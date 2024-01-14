@@ -14,9 +14,9 @@ const Hero = () => {
 	const x = useTransform(scrollY, [0, 500], [0, 1000]);
 
 	const treeUp = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
-	const treeLeft = useTransform(scrollYProgress, [0, 1], ['0%', '200%']);
-	const sign = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
-	const treeRight = useTransform(scrollYProgress, [0, 1], ['0%', '200%']);
+	const treeLeft = useTransform(scrollYProgress, [0, 1], ['0%', '150%']);
+
+	const treeBottom = useTransform(scrollYProgress, [0, 0.7], ['0%', '250%']);
 
 	return (
 		<div
@@ -49,7 +49,6 @@ const Hero = () => {
 				width={400}
 				height={300}
 				className='absolute z-[-100] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
-				style={{ y: sign }}
 			/>
 			{/* tree right */}
 			<motion.img
@@ -59,6 +58,15 @@ const Hero = () => {
 				height={280}
 				className='absolute z-[10]  right-0 '
 				style={{ x }}
+			/>
+			{/* tree bottom */}
+			<motion.img
+				src='/tree4.png'
+				alt='tree4'
+				width={900}
+				height={280}
+				className='absolute z-[50]  bottom-[-80px] '
+				style={{ y: treeBottom }}
 			/>
 		</div>
 	);
