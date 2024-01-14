@@ -10,21 +10,18 @@ const Hero = () => {
 		offset: ['start start', 'end start'],
 	});
 
-	const { scrollY } = useScroll()
-	const x = useTransform(scrollY, [0, 500], [0, 1000])
+	const { scrollY } = useScroll();
+	const x = useTransform(scrollY, [0, 500], [0, 1000]);
 
 	const treeUp = useTransform(scrollYProgress, [0, 1], ['0%', '100%']);
 	const treeLeft = useTransform(scrollYProgress, [0, 1], ['0%', '200%']);
 	const sign = useTransform(scrollYProgress, [0, 1], ['0%', '50%']);
 	const treeRight = useTransform(scrollYProgress, [0, 1], ['0%', '200%']);
 
-
-
 	return (
 		<div
 			ref={ref}
-			className='w-full h-screen overflow-hidden relative grid place-items-center'
-			>
+			className='w-full h-screen overflow-hidden relative grid place-items-center'>
 			{/* tree up */}
 			<motion.img
 				src='/tree3.png'
@@ -42,7 +39,7 @@ const Hero = () => {
 				width={700}
 				height={300}
 				// className='relative z-30 top-1/2 left-0 transform -translate-y-1/2'
-				style={{ y: treeLeft}}
+				style={{ y: treeLeft }}
 				className='relative z-12  top-[-400px] left-[-400px]'
 			/>
 			{/* sign */}
@@ -52,6 +49,7 @@ const Hero = () => {
 				width={400}
 				height={300}
 				className='absolute z-[-100] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+				style={{ y: sign }}
 			/>
 			{/* tree right */}
 			<motion.img
@@ -62,7 +60,6 @@ const Hero = () => {
 				className='absolute z-[10]  right-0 '
 				style={{ x }}
 			/>
-			
 		</div>
 	);
 };
