@@ -4,6 +4,8 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const ZombieOne = () => {
+
+  
 	return (
 		<div className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-gray-300 to-gray-500'>
 			<motion.img
