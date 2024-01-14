@@ -4,10 +4,19 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const ZombieOne = () => {
+	const ref = useRef(null);
+	const { scrollYProgress } = useScroll({
+		target: ref,
+		offset: ['start start', 'end start'],
+	});
 
-  
+	const scale = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+	const scaleTwo = useTransform(scrollYProgress, [0, 0.5], [0.8, 1]);
+
 	return (
-		<div className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-gray-300 to-gray-500'>
+		<div
+			className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-gray-300 to-gray-500'
+			ref={ref}>
 			<motion.img
 				src='/zombie1.png'
 				alt='zombie'
@@ -32,9 +41,12 @@ const ZombieOne = () => {
 			<motion.img
 				src='/forest.png'
 				alt='forest'
-				width={1200}
+				width={1400}
 				height={200}
-				className='absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 '
+				className='absolute z-10 '
+				style={{
+					scale: scale,
+				}}
 			/>
 		</div>
 	);
