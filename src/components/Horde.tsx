@@ -12,7 +12,7 @@ const Horde = () => {
 
 	const scale = useTransform(scrollYProgress, [0, 2], [1, 4]);
 
-	const scaleTwo = useTransform(scrollYProgress, [1, 2], [1.5, 4]);
+	const scaleTwo = useTransform(scrollYProgress, [0, 2], [1.5, 4]);
 
 	const xTransform = useTransform(
 		scrollYProgress,
