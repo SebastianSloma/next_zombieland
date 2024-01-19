@@ -13,8 +13,6 @@ export default function Home() {
 			<ZombieOne />
 			<Road />
 			<Horde />
-			<Attack />
-			<Hands />
 			<House />
 		</>
 	);
