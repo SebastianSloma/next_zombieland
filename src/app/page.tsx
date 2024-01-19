@@ -1,5 +1,3 @@
-import Attack from '@/components/Attack';
-import Hands from '@/components/Hands';
 import Hero from '@/components/Hero';
 import Horde from '@/components/Horde';
 import House from '@/components/House';
