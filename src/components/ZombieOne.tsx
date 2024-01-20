@@ -26,7 +26,7 @@ const ZombieOne = () => {
 
 	return (
 		<div
-			className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-gray-300 to-gray-500'
+			className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-amber-300 to-gray-500'
 			ref={ref}>
 			{/* zombie right */}
 			<motion.img

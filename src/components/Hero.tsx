@@ -21,7 +21,7 @@ const Hero = () => {
 	return (
 		<div
 			ref={ref}
-			className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-sky-500 to-indigo-500'>
+			className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-sky-500 to-zinc-500'>
 			{/* tree up */}
 			<motion.img
 				src='/tree3.png'

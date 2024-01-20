@@ -28,7 +28,7 @@ const Horde = () => {
 
 	return (
 		<div
-			className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-neutral-300 to-stone-600'
+			className='w-full h-screen overflow-hidden relative grid place-items-center bg-gradient-to-r from-blue-800 to-stone-600'
 			ref={ref}>
 			<motion.img
 				src='/cloud1.png'
