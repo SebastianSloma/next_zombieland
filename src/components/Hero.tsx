@@ -56,7 +56,7 @@ const Hero = () => {
 				alt='tree1'
 				width={570}
 				height={280}
-				className='absolute z-[10]  right-0 '
+				className='absolute z-[10] right-0'
 				style={{ x }}
 			/>
 			{/* tree bottom */}

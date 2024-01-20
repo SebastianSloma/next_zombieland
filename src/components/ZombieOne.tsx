@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const ZombieOne = () => {
 	const ref = useRef(null);
+	
 	const { scrollYProgress } = useScroll({
 		target: ref,
 		offset: ['start start', 'end start'],

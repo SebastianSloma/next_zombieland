@@ -1,3 +1,4 @@
+import Hand from '@/components/Hand';
 import Hero from '@/components/Hero';
 import Horde from '@/components/Horde';
 import House from '@/components/House';
@@ -12,6 +13,7 @@ export default function Home() {
 			<Road />
 			<Horde />
 			<House />
+			<Hand/>
 		</>
 	);
 }
