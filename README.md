@@ -1,4 +1,4 @@
-## Zombie Parallax Efect
+## Zombie Parallax Effect
 🪓 Next.js 
 🧨 Framer-Motion
 🔗 [`Live Demo`](https://next-zombieland.vercel.app/)
